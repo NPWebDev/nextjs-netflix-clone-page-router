@@ -1,17 +1,23 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "@/styles/Home.module.css";
+import Banner from "@/components/banner/banner";
+import React from "react";
 
 export default function Home() {
   return (
-    <>
+    <React.Fragment>
       <Head>
         <title>Netflix Clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
         <h1>Netflix Clone</h1>
+        <Banner
+          title="Mission Impossible"
+          subTitle="Time bomb is ticking"
+          imgUrl="/static/mission-impossible-7.webp"
+        />
       </main>
-    </>
+    </React.Fragment>
   );
 }
