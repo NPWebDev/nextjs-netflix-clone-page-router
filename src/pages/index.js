@@ -4,6 +4,7 @@ import Banner from "@/components/banner/banner";
 import React from "react";
 import NavBar from "@/components/nav/navbar";
 import Card from "@/components/card/card";
+import SectionCard from "@/components/card/section-card";
 
 export default function Home() {
   return (
@@ -19,9 +20,7 @@ export default function Home() {
           subTitle="Time bomb is ticking"
           imgUrl="/static/mission-impossible-7.webp"
         />
-        <Card imgUrl="/static/mission-impossible-7.webp" size="large" />
-        <Card imgUrl="/static/mission-impossible-7.webp" size="medium" />
-        <Card imgUrl="/static/mission-impossible-7.webp" size="small" />
+        <SectionCard title="Disney" />
       </main>
     </React.Fragment>
   );
