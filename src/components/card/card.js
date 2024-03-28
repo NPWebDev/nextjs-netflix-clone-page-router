@@ -1,6 +1,8 @@
 import Image from "next/image";
 import styles from "./card.module.css";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import cls from "classnames";
 
 const Card = (props) => {
   const { imgUrl = "/static/mission-impossible-7.webp", size = "medium" } =
@@ -19,7 +21,10 @@ const Card = (props) => {
   return (
     <div className={styles.container}>
       Card
-      <div className={classMap[size]}>
+      <motion.div
+        className={cls(styles.imgMotionWrapper, classMap[size])}
+        whileHover={{ scale: 1.2 }}
+      >
         <Image
           className={styles.cardImg}
           src={imgSrc}
@@ -27,7 +32,7 @@ const Card = (props) => {
           layout="fill"
           onError={handleOnError}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

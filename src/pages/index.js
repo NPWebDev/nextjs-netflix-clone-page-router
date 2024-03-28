@@ -19,7 +19,7 @@ export default function Home() {
           subTitle="Time bomb is ticking"
           imgUrl="/static/mission-impossible-7.webp"
         />
-        <Card imgUrl="/static/mission-impossible1-7.webp" size="large" />
+        <Card imgUrl="/static/mission-impossible-7.webp" size="large" />
         <Card imgUrl="/static/mission-impossible-7.webp" size="medium" />
         <Card imgUrl="/static/mission-impossible-7.webp" size="small" />
       </main>
