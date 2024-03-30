@@ -7,6 +7,28 @@ import Card from "@/components/card/card";
 import SectionCard from "@/components/card/section-card";
 
 export default function Home() {
+  const disneyVideos = [
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+    { imgUrl: "/static/mission-impossible-7.webp" },
+  ];
   return (
     <React.Fragment>
       <Head>
@@ -21,7 +43,10 @@ export default function Home() {
           imgUrl="/static/mission-impossible-7.webp"
         />
         <div className={styles.sectionWrapper}>
-          <SectionCard title="Disney" />
+          <SectionCard title="Disney" size="large" videos={disneyVideos} />
+        </div>
+        <div className={styles.sectionWrapper}>
+          <SectionCard title="Disney" size="medium" videos={disneyVideos} />
         </div>
       </main>
     </React.Fragment>
