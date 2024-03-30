@@ -20,7 +20,9 @@ export default function Home() {
           subTitle="Time bomb is ticking"
           imgUrl="/static/mission-impossible-7.webp"
         />
-        <SectionCard title="Disney" />
+        <div className={styles.sectionWrapper}>
+          <SectionCard title="Disney" />
+        </div>
       </main>
     </React.Fragment>
   );
