@@ -5,16 +5,13 @@ import { motion } from "framer-motion";
 import cls from "classnames";
 
 const Card = (props) => {
-  const {
-    imgUrl = "/static/mission-impossible-7.webp",
-    size = "medium",
-    id,
-  } = props;
+  const { imgUrl, size = "medium", id } = props;
   const classMap = {
     large: styles.lgItem,
     medium: styles.mdItem,
     small: styles.smItem,
   };
+
   const [imgSrc, setImgSrc] = useState(imgUrl);
   const handleOnError = () => {
     setImgSrc(

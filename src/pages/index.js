@@ -3,32 +3,12 @@ import styles from "@/styles/Home.module.css";
 import Banner from "@/components/banner/banner";
 import React from "react";
 import NavBar from "@/components/nav/navbar";
-import Card from "@/components/card/card";
 import SectionCard from "@/components/card/section-card";
+import { getVideos } from "@/libs/videos";
 
 export default function Home() {
-  const disneyVideos = [
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-    { imgUrl: "/static/mission-impossible-7.webp" },
-  ];
+  const disneyVideos = getVideos();
+
   return (
     <React.Fragment>
       <Head>
