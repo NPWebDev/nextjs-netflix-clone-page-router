@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./navbar.module.css";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const NavBar = (props) => {
   const { username } = props;
