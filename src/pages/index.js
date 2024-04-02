@@ -6,9 +6,13 @@ import NavBar from "@/components/nav/navbar";
 import SectionCard from "@/components/card/section-card";
 import { getVideos } from "@/libs/videos";
 
-export default function Home() {
+export async function getServerSideProps() {
   const disneyVideos = getVideos();
 
+  return { props: { disneyVideos } };
+}
+
+export default function Home({ disneyVideos }) {
   return (
     <React.Fragment>
       <Head>
