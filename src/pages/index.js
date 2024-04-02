@@ -7,7 +7,7 @@ import SectionCard from "@/components/card/section-card";
 import { getVideos } from "@/libs/videos";
 
 export async function getServerSideProps() {
-  const disneyVideos = getVideos();
+  const disneyVideos = await getVideos();
 
   return { props: { disneyVideos } };
 }
